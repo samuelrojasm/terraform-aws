@@ -29,6 +29,12 @@ jobs:
       - name: Start workflow message
         run: echo "Now running build workflow."
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with: 
+          name: assets
+          path: dist
+
       # Runs a set of commands using the runners shell
       - name: Ending workflow message
         run: |
