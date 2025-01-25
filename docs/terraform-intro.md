@@ -130,3 +130,16 @@ terraform {
     ├── vpc/
     ├── ec2/
     └── s3/
+
+.
+├── README.md
+├── src
+│   ├── app.py
+│   ├── models.py
+│   └── utils.py
+├── docs
+│   ├── index.md
+│   └── about.md
+└── tests
+    ├── test_app.py
+    └── test_utils.py
