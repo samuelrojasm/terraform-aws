@@ -6,7 +6,7 @@
 Pasos básicos para usar Terraform de manera eficiente en cualquier proyecto.
 ### 1. Instalar Terraform
 Instalación en macOS:
-``` brew install terraform
+``` brew install terraform ```
 
 ## Comandos Básicos de Terraform:
 | Comando                    | Descripción                                                 |
