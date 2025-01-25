@@ -121,7 +121,7 @@ terraform {
 4. **Automatización**: Integrar Terraform en un pipeline de CI/CD para automatizar la provisión de infraestructura.
 
 ## Estructura del proyecto
-``md
+```bash
 ├── main.tf
 ├── variables.tf
 ├── outputs.tf
@@ -130,8 +130,9 @@ terraform {
     ├── vpc/
     ├── ec2/
     └── s3/
+```
 
-``md
+```bash
 .
 ├── README.md
 ├── src
@@ -147,7 +148,7 @@ terraform {
 ```
 
 
-``
+```bash
 paquetes/botón
 ├── lib
 │ ├── botón.d.ts
