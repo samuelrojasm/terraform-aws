@@ -145,7 +145,7 @@ terraform {
 │   │   ├── variables.tf
 │   │   └── outputs.tf
 ```
-### Archivos
+### Archivos del proyecto en Git
 | Archivo                    | Descripción                                                                         |
 |----------------------------|-------------------------------------------------------------------------------------|
 | **`main.tf`**              | Contains the core resource declarations and configurations for the module.          |
