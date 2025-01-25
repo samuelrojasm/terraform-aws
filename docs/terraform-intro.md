@@ -122,48 +122,13 @@ terraform {
 
 ## Estructura del proyecto
 ```bash
+.
 ├── main.tf
 ├── variables.tf
 ├── outputs.tf
 ├── terraform.tfvars.tf
-└── modules.tf
-    ├── vpc/
-    ├── ec2/
-    └── s3/
-```
-
-```bash
-.
-├── README.md
-├── src
-│   ├── app.py
-│   ├── models.py
-│   └── utils.py
-├── docs
-│   ├── index.md
-│   └── about.md
-└── tests
-    ├── test_app.py
-    └── test_utils.py
-```
-
-
-```bash
-paquetes/botón
-├── lib
-│ ├── botón.d.ts
-│ ├── botón.js
-│ ├── botón.js.map
-│ ├── botón.historias.d.ts
-│ ├── botón.historias.js
-│ ├── botón.stories.js.map
-│ ├── índice.d.ts
-│ ├── índice.js
-│ └── index.js.mapa
-├── paquete.json
-├── fuente
-│ ├── botón.historias.tsx
-│ ├── botón.tsx
-│ └── índice.ts
-└── tsconfig.json
+├── modules.tf
+│   ├── vpc/
+│   ├── ec2/
+│   └── s3/
 ```
