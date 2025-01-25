@@ -145,3 +145,24 @@ terraform {
     ├── test_app.py
     └── test_utils.py
 ```
+
+
+``md
+paquetes/botón
+├── lib
+│ ├── botón.d.ts
+│ ├── botón.js
+│ ├── botón.js.map
+│ ├── botón.historias.d.ts
+│ ├── botón.historias.js
+│ ├── botón.stories.js.map
+│ ├── índice.d.ts
+│ ├── índice.js
+│ └── index.js.mapa
+├── paquete.json
+├── fuente
+│ ├── botón.historias.tsx
+│ ├── botón.tsx
+│ └── índice.ts
+└── tsconfig.json
+```
