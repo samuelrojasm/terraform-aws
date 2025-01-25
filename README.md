@@ -10,7 +10,7 @@ Para usar este repositorio, instalar los siguientes programas:
 - Una cuenta de AWS y credenciales configuradas
 
 ## Instalación
-1. Clona este repositorio:
+1. Clonar este repositorio:
 ```bash
 git clone https://github.com/tu_usuario/terraform-aws.git
 cd terraform-aws
