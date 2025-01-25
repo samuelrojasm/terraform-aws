@@ -119,3 +119,14 @@ terraform {
 2. **Uso de módulos**: Organizar el código de infraestructura en módulos para reutilizar configuraciones y hacer el código más modular.
 3. **Revisar siempre el **`plan`** antes de aplicar cambios**: Usar siempre **`terraform plan`** antes de **`terraform apply`** para evitar cambios no deseados.
 4. **Automatización**: Integrar Terraform en un pipeline de CI/CD para automatizar la provisión de infraestructura.
+
+## Estructura del proyecto
+
+├── main.tf
+├── variables.tf
+├── outputs.tf
+├── terraform.tfvars.tf
+└── modules.tf
+    ├── vpc/
+    ├── ec2/
+    └── s3/
