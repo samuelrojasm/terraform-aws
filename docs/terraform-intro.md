@@ -145,3 +145,10 @@ terraform {
 │   │   ├── variables.tf
 │   │   └── outputs.tf
 ```
+| Comando                    | Descripción                                                 |
+|----------------------------|-------------------------------------------------------------|
+| **`main.tf`**              | Contains the core resource declarations and configurations for the module.          |
+| **`variables.tf`**       | Defines input variables that allow users to customize the module’s behavior.       |
+| **`outputs.tf`**      | Provides information about the created resources.                    |
+| **`providers.tf`**       | Defines the versions used for the providers and terraform.             |
+| **`README.md`** | Documentation on how to use the module, including descriptions of input variables and outputs.          |
