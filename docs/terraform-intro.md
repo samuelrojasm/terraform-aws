@@ -2,6 +2,12 @@
 - Terraform es una herramienta de Infraestructura como Código (IaC) que permite definir, gestionar y automatizar la infraestructura a través de archivos de configuración declarativa. 
 - Terraform utiliza un lenguaje llamado HCL (HashiCorp Configuration Language) para definir la infraestructura.
 
+## Pasos Básicos de Terraform
+Pasos básicos para usar Terraform de manera eficiente en cualquier proyecto.
+### 1. Instalar Terraform
+Instalación en macOS:
+``` brew install terraform
+
 ## Comandos Básicos de Terraform:
 | Comando                    | Descripción                                                 |
 |----------------------------|-------------------------------------------------------------|
