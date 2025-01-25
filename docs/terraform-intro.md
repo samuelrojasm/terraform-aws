@@ -115,7 +115,7 @@ terraform {
 | **`terraform destroy`**    | Elimina todos los recursos gestionados por Terraform.       |
 
 ## Buenas Prácticas:
-1. **Mantener los archivos de estado seguros**: Los archivos de estado (**`terraform.tfstate) contienen información sensible (como credenciales o configuraciones internas). Usa almacenamiento remoto y habilita el cifrado.
+1. **Mantener los archivos de estado seguros**: Los archivos de estado (**`terraform.tfstate`**) contienen información sensible (como credenciales o configuraciones internas). Usa almacenamiento remoto y habilita el cifrado.
 2. **Uso de módulos**: Organizar el código de infraestructura en módulos para reutilizar configuraciones y hacer el código más modular.
 3. **Revisar siempre el **`plan`** antes de aplicar cambios**: Usar siempre **`terraform plan`** antes de **`terraform apply`** para evitar cambios no deseados.
 4. **Automatización**: Integrar Terraform en un pipeline de CI/CD para automatizar la provisión de infraestructura.
