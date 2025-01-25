@@ -147,7 +147,7 @@ terraform {
 ```
 
 
-``md
+```
 paquetes/botón
 ├── lib
 │ ├── botón.d.ts
