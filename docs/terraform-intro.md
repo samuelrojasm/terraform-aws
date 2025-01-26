@@ -13,14 +13,14 @@ Pasos básicos para usar Terraform de manera eficiente en cualquier proyecto.
 ### 1. Instalar Terraform
 #### Instalación en macOS:
 - Instalar de HashiCorp tap, un repositorio de todos los paquetes de Homebrew
-```
-brew tap hashicorp/tap
-```
-    - Instalar Terraform 
+    ```
+    brew tap hashicorp/tap
+    ```
+- Instalar Terraform 
         ```
         brew install hashicorp/tap/terraform
         ```
-    - Una vez instalado, puedes verificar la instalación ejecutando:
+- Una vez instalado, puedes verificar la instalación ejecutando:
         ```
         terraform -v
         ```
@@ -30,11 +30,11 @@ brew tap hashicorp/tap
         ```
         terraform -help plan
         ```
-    - To update to the latest version of Terraform, first update Homebrew:
+- To update to the latest version of Terraform, first update Homebrew:
         ```
         brew update
         ```
-     - Command to download and use the latest Terraform version:
+- Command to download and use the latest Terraform version:
         ```
         brew upgrade hashicorp/tap/terraform
         ```
