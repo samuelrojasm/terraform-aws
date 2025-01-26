@@ -12,10 +12,10 @@ brew install awscli
 Pasos básicos para usar Terraform de manera eficiente en cualquier proyecto.
 ### 1. Instalar Terraform
 #### Instalación en macOS:
-    - Instalar de HashiCorp tap, un repositorio de todos los paquetes de Homebrew
-        ```
-        brew tap hashicorp/tap
-        ```
+- Instalar de HashiCorp tap, un repositorio de todos los paquetes de Homebrew
+```
+brew tap hashicorp/tap
+```
     - Instalar Terraform 
         ```
         brew install hashicorp/tap/terraform
