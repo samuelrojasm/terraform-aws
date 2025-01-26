@@ -8,10 +8,10 @@ Instalación en macOS:
 ```
 brew install awscli
 ```
-## Pasos Básicos de Terraform
+## Pasos básicos de Terraform
 Pasos básicos para usar Terraform de manera eficiente en cualquier proyecto.
 ### 1. Instalar Terraform
-Instalación en macOS:
+- Instalación en macOS:
     - Instalar de HashiCorp tap, un repositorio de todos los paquetes de Homebrew
         ```
         brew tap hashicorp/tap
@@ -34,7 +34,7 @@ Instalación en macOS:
         ```
         brew upgrade hashicorp/tap/terraform
         ```
-        
+
 ### 2. Inicializar el Directorio del Proyecto
 Antes de trabajar con Terraform, se debe crear un directorio donde se guarden los archivos de configuración de **Terraform** y luego inicializarlo.
 - Crea un nuevo directorio en la máquina local para tu proyecto de Terraform.
