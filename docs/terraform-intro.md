@@ -23,7 +23,11 @@ Pasos básicos para usar Terraform de manera eficiente en cualquier proyecto.
     - Una vez instalado, puedes verificar la instalación ejecutando:
         ```
         terraform -v
+        ```
+        ```
         terraform -help
+        ```
+        ```
         terraform -help plan
         ```
     - To update to the latest version of Terraform, first update Homebrew:
