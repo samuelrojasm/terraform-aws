@@ -2,17 +2,39 @@
 - Terraform es una herramienta de Infraestructura como Código (IaC) que permite definir, gestionar y automatizar la infraestructura a través de archivos de configuración declarativa. 
 - Terraform utiliza un lenguaje llamado HCL (HashiCorp Configuration Language) para definir la infraestructura.
 
+## Requisitos
+### 1. Instalar AWS CLI
+Instalación en macOS:
+```
+brew install awscli
+```
 ## Pasos Básicos de Terraform
 Pasos básicos para usar Terraform de manera eficiente en cualquier proyecto.
 ### 1. Instalar Terraform
 Instalación en macOS:
-```
-brew install terraform
-```
-Una vez instalado, puedes verificar la instalación ejecutando:
-```
-terraform -v
-```
+    - Instalar de HashiCorp tap, un repositorio de todos los paquetes de Homebrew
+        ```
+        brew tap hashicorp/tap
+        ```
+    - Instalar Terraform 
+        ```
+        brew install hashicorp/tap/terraform
+        ```
+    - Una vez instalado, puedes verificar la instalación ejecutando:
+        ```
+        terraform -v
+        terraform -help
+        terraform -help plan
+        ```
+    - To update to the latest version of Terraform, first update Homebrew:
+        ```
+        brew update
+        ```
+     - Command to download and use the latest Terraform version:
+        ```
+        brew upgrade hashicorp/tap/terraform
+        ```
+        
 ### 2. Inicializar el Directorio del Proyecto
 Antes de trabajar con Terraform, se debe crear un directorio donde se guarden los archivos de configuración de **Terraform** y luego inicializarlo.
 - Crea un nuevo directorio en la máquina local para tu proyecto de Terraform.
