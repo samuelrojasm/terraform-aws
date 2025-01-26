@@ -11,7 +11,7 @@ brew install awscli
 ## Pasos básicos de Terraform
 Pasos básicos para usar Terraform de manera eficiente en cualquier proyecto.
 ### 1. Instalar Terraform
-- Instalación en macOS:
+#### Instalación en macOS:
     - Instalar de HashiCorp tap, un repositorio de todos los paquetes de Homebrew
         ```
         brew tap hashicorp/tap
@@ -98,7 +98,7 @@ Terraform pedirá confirmación antes de aplicar los cambios. Confirmar escribie
 
 ### 7. Modificar la Infraestructura
 - Terraform se encargará de calcular las diferencias entre el estado actual y la configuración deseada, y hará los cambios necesarios en la infraestructura.
-- Para hacer cambios en la infraestructura, simplemente editar el archivo **`.tf.`**  para agregar, modificar o eliminar recursos. Luego, sigur estos pasos:
+- Para hacer cambios en la infraestructura, simplemente editar el archivo **`.tf`**  para agregar, modificar o eliminar recursos. Luego, seguir estos pasos:
     1. Previsualiza los cambios con **`terraform plan`**.
     2. Aplica los cambios con **`terraform apply`**.
 
