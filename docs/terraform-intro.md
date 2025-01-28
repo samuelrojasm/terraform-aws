@@ -4,7 +4,7 @@
 
 ## Requisitos
 ### 1. Instalar AWS CLI
-Instalación en macOS:
+- Instalación en macOS:
     ```
     brew install awscli
     ```
