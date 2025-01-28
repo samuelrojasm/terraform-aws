@@ -267,4 +267,6 @@ output "ami_architecture" {
 ## Referencias
 - [AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 - [Lifecycle management of AWS resources](https://registry.terraform.io/providers/hashicorp/aws/latest)
+- [Resource: aws_instance](https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/instance)
 - [Terraform Data Sources](https://developer.hashicorp.com/terraform/language/data-sources)
+- [Data Source: aws_ami](https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/ami)
