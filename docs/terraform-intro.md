@@ -195,6 +195,75 @@ terraform {
 | **`provider.tf`**          | Defines the versions used for the providers and terraform.                          |
 | **`README.md`**            | Documentation on how to use the module, including descriptions of input variables and outputs.  |
 
+## Data Source en Terraform
+- En Terraform, un ***Data Source*** se usa para leer datos externos o recursos existentes que ya están creados fuera de Terraform, o para consultar información dinámica de tu infraestructura que no necesariamente es gestionada directamente por Terraform.
+- Un ***Data Source*** permite obtener información de recursos ya existentes para utilizarla en la creación o configuración de nuevos recursos en tu infraestructura.
+- Cuando Terraform ejecuta la infraestructura, lo primero que hace es obtener la información del ***Data Source***. Terraform realiza la consulta a la API del proveedor (en este caso, AWS) utilizando los parámetros definidos en el bloque del Data Source. 
+- Posteriormente, Terraform utiliza los datos obtenidos para configurar o crear los recursos en tu infraestructura.
+### Ejemplo de definición de Data Source
+- Ejemplo:
+    ```
+    data "aws_ami" "ubuntu" {
+        most_recent = true
+        filter {
+            name   = "name"
+            values = ["ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"]
+        }
+        filter {
+            name   = "virtualization-type"
+            values = ["hvm"]
+        }
+        owners = ["099720109477"]  # Canonical
+    }
+    ```
+- Cuando se ejecuta el plan de Terraform, el ID de la AMI más reciente que coincida con esos filtros será devuelto, y se puede usar en otros recursos.
+- En este caso, **data.aws_ami.ubuntu.id** obtiene el id de la AMI más reciente que cumple con los filtros proporcionados en el Data Source.
+    ```
+    ami = data.aws_ami.ubuntu.id
+    ```
+### Otros datos puedes obtener del Data Source
+- Un Data Source puede devolver varios atributos, no solo el id. 
+- Estos atributos dependen del tipo de Data Source que estés utilizando. 
+- Algunos ejemplos adicionales de lo que puedes obtener de un Data Source, y específicamente para el caso de **aws_ami**:
+#### Atributos comunes de un Data Source ***aws_ami***:
+- **`id`**: El ID de la AMI seleccionada.
+- **`name`**: El nombre de la AMI.
+- **`owner_id`**: El ID del propietario de la AMI (en este caso, Canonical).
+- **`virtualization_type`**: El tipo de virtualización de la AMI (por ejemplo, hvm).
+- **`architecture`**: La arquitectura de la AMI (por ejemplo, x86_64 o arm64).
+- **`root_device_name`**: El nombre del dispositivo de arranque (root).
+- **`block_device_mappings`**: Detalles sobre los volúmenes de bloque que se adjuntan a la AMI.
+- **`image_location`**: La ubicación de la AMI en el sistema de AWS (si está en un marketplace o en una región específica).
+- **`tags`**: Las etiquetas asociadas con la AMI (si están disponibles).
+
+### Ejemplo de uso de otros atributos del Data Source ***aws_ami***:
+```
+data "aws_ami" "ubuntu" {
+  most_recent = true
+  filter {
+    name   = "name"
+    values = ["ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"]
+  }
+  filter {
+    name   = "virtualization-type"
+    values = ["hvm"]
+  }
+  owners = ["099720109477"]  # Canonical
+}
+
+output "ami_id" {
+  value = data.aws_ami.ubuntu.id
+}
+
+output "ami_name" {
+  value = data.aws_ami.ubuntu.name
+}
+
+output "ami_architecture" {
+  value = data.aws_ami.ubuntu.architecture
+}
+```
+
 ## Referencias
 [AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 [Lifecycle management of AWS resources](https://registry.terraform.io/providers/hashicorp/aws/latest)
