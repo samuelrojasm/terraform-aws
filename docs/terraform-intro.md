@@ -197,3 +197,4 @@ terraform {
 
 ## Referencias
 [AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
+[Lifecycle management of AWS resources](https://registry.terraform.io/providers/hashicorp/aws/latest)
