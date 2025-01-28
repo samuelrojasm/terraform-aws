@@ -7,10 +7,8 @@ terraform {
         }
     }
 }
-
 # Configuración del proveedor AWS
 provider "aws" {
   region  = "us-east-1"             # Región de AWS donde se crean los recursos
-  profile = "srojas"                # Nombre del perfil configurado en AWS CLI con IAM Identity Center
+  profile = "tf"                # Nombre del perfil configurado en AWS CLI con IAM Identity Center
 }
-
