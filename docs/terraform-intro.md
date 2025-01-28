@@ -8,6 +8,21 @@ Instalación en macOS:
 ```
 brew install awscli
 ```
+### 2. Configurar el acceso por AWS IAM Identity Center 
+En mi caso uso un usuario AWS SSO.
+- Crear un nuevo profile:
+```
+aws configure sso
+```
+- Autenticación de perfil:
+```
+aws sso login --profile <nombre-del-perfil>
+```
+- Terminar la sesión:
+```
+aws sso logout
+```
+
 ## Pasos básicos de Terraform
 Pasos básicos para usar Terraform de manera eficiente en cualquier proyecto.
 ### 1. Instalar Terraform
