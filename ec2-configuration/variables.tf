@@ -1,4 +1,4 @@
-variable "service_name" {
-  description = "Nombre de los repositorios EC"
-  type        = set(string)
+variable "ec2_name" {
+  description = "Nombre de intancia EC2"
+  type        = string
 }
